@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Hiragino Sans', Meiryo, 'sans-serif';
+  font-size: 15px;
+  line-height: 1.7;
+  color: #52490C;
+  background-color: #F0FCFC;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #C3BA43;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+ul, ol {
+  list-style: none;
+}
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#logo img {
+  width: 140px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #666;
+}
+
+#About {
+  padding: 60px 20px;
+}
+
+#About h2 {
+  text-align: center;
+}
+
+.aboutInner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.aboutInner figure {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.aboutInner p {
+  flex: 1 1 400px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#SkillList {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#SkillList ul.skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+#SkillList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#SkillList img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+#SkillList a:hover img {
+  transform: scale(1.05);
+}
+
+#SkillList li p {
+  font-size: 18px;
+  color: #707070;
+}
+
+#Works {
+  padding: 60px 220px;
+  text-align: center;
+}
+
+#Works h2 {
+  margin-bottom: 30px;
+}
+
+.workItem {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.workItem a {
+  display: block;
+  width: 100%;
+}
+
+.workItem img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+}
+
+.workItem h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.workItem p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #777;
+}
+
+#Contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #52490C;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
+footer p {
+  margin: 0;
+}
+
+/*tablet*/
+@media (max-width: 1024px) {
+  #head {
+    width: 94%;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  #About {
+    padding: 50px 20px;
+  }
+
+  .aboutInner {
+    gap: 16px;
+    max-width: 900px;
+  }
+
+  .aboutInner figure, .aboutInner p {
+    flex: 1 1 45%;
+  }
+
+  .aboutInner p {
+    font-size: 14px;
+  }
+
+  #SkillList {
+    padding: 50px 20px;
+  }
+
+  #SkillList ul.skill {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 30px;
+  }
+
+  #SkillList li img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  #SkillList li p {
+    font-size: 16px;
+  }
+
+  #Works {
+    padding: 50px 20px;
+  }
+
+  .workItem {
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+
+  .workItem h3 {
+    font-size: 22px;
+  }
+
+  .workItem p {
+    font-size: 14px;
+  }
+
+  .meta {
+    font-size: 12px;
+  }
+
+  #Contact {
+    padding: 50px 20px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+  
+
+
+/* smartphone */
+@media (max-width: 768px) {
+
+  #head {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    width: 100%;
+  }
+
+  #logo {
+    margin-bottom: 10px;
+  }
+
+  #logo img {
+    width: 120px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  #About {
+    padding: 40px 15px;
+  }
+
+  .aboutInner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutInner figure, .aboutInner p {
+    flex: 1 1 100%;
+  }
+
+  #SkillList {
+    padding: 40px 15px;
+  }
+
+  #SkillList ul.skill {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+  }
+
+  #SkillList li img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #SkillList li p {
+    font-size: 16px;
+  }
+
+  #Works {
+    padding: 40px 15px;
+  }
+
+  .workItem {
+    margin-bottom: 35px;
+  }
+
+  .workItem h3 {
+    font-size: 20px;
+  }
+
+  .workItem p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  #Contact {
+    padding: 40px 15px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #Works{
+    padding: 40px 20px !important;
+    break-before: page;
+    page-break-before: always;
+  }
+  
+  #Contact {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  
+  footer {
+    padding: 10px 0 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .workItem {
+     margin-bottom: 25px;
+  }
+  .workItem:last-child {
+    margin-bottom: 20px;
+  }
+}
